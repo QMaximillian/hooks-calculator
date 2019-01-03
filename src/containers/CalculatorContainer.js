@@ -2,6 +2,9 @@ import React, { Component, useState, createContext } from 'react'
 import NumberButton from '../components/NumberButton'
 import MainScreen from '../components/MainScreen'
 import NumberButtonContainer from '../containers/NumberButtonContainer'
+import OperationContainer from './OperationContainer'
+
+
 class CalculatorContainer extends Component {
 
   state = {
@@ -48,6 +51,7 @@ export const CalculatorContainerFunction = () => {
     <div>
       <MainScreen displayArray={display}/>
         <NumberButtonContainer handleDisplayChange={handleDisplayChange}/>
+        <OperationContainer handleDisplayChange={handleDisplayChange}/>
     </div>
   )
 }
