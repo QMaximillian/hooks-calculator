@@ -1,8 +1,12 @@
-import React from 'react'
+import React, { useContext } from 'react'
 
 
 const SimpleOperation = (props) => {
+
+  // let value = useContext(DisplayContext)
+
   return(
+
     <div>
       <button
         value={props.operation}
@@ -10,6 +14,7 @@ const SimpleOperation = (props) => {
         {props.operation}
       </button>
     </div>
+
   )
 }
 
